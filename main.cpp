@@ -9,12 +9,14 @@ int main(){
 	int nombre=0;
 	int essais=0;
 	//afficher un txt à lécran
-	cout << "entrez un nombre entre 1 et 100" << endl;
-	//lire le nombre tapé et l'enregistrer dans la variable nombre
+	cout << "Entrez un nombre entre 1 et 100" << endl;
+	
 
 		while (alea!=nombre)
 			{
+			//incrémente le compteur de coups
 			essais++;
+			//lire le nombre tapé et l'enregistrer dans la variable nombre
 			cin >> nombre;
 				if (alea<nombre)
 					cout << "Trop grand" << endl;
