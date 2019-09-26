@@ -5,21 +5,42 @@ using namespace std;
 int main(){
 
 	int continu=1;
+
 	while (continu==1)
 	{
-	srand(time(NULL));
-	int alea=rand()%100 + 1;	
+	int diff=0;
+	int alea=0;
 	int nombre=0;
 	int essais=0;
 
-	
-	
-		
-		
-			//afficher un txt à lécran
-			cout << "Entrez un nombre entre 1 et 100" << endl;
-			cout << alea << endl;
+		//Choix de la difficultée
 
+		cout << "Choisir 1 ou 2 ou 3" << endl;
+		cin >> diff;
+			if (diff==1)
+			{
+			srand(time(NULL));
+			alea=rand()%100 + 1;
+			diff=100;
+			}	
+			else if (diff==2)
+			{	
+			srand(time(NULL));
+			alea=rand()%1000 + 1;
+			diff=1000;
+			}	
+			else
+			{	
+			srand(time(NULL));
+			alea=rand()%10000 + 1;
+			diff=10000;
+			}	
+
+
+			//afficher un txt à lécran
+			cout << "Entrez un nombre entre 1 et " << diff << " :" << endl;
+			cout << alea << endl;
+			
 
 				while (alea!=nombre)
 				{
